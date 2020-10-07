@@ -10,10 +10,8 @@
 
 /* Whole Doc */
 body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background:#2980b9;
+    overflow-x: hidden;
 }
 
 /* Teams */
@@ -145,19 +143,15 @@ body{
 /* Responsive */
 @media(max-width: 988px){
     .container{
-        top: 80%;
+        top: initial;
+        transform: translateY(0);
     }
-    
     .wave{
         width: 150%;
     }
 }
 
-@media(max-width: 698px){
-    .container{
-        top: 110%;
-    }
-
+@media(max-width: 698px){  
     .wave{
         width: 220%;
     }
